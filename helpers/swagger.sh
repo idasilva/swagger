@@ -4,7 +4,7 @@ VERSION=$(<./VERSION)
 ROOT_DIR=$(pwd)
 FILENAME="index.html"
 SEARCH="https://petstore.swagger.io/v2/swagger.json"
-REPLACE="https://digital-swagger.s3.amazonaws.com/api.yml"
+REPLACE="https://digital-swagger.s3.amazonaws.com/exemplo.yml"
 
 
 if mkdir -p $ROOT_DIR/helpers/dist; then
