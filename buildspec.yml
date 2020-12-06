@@ -2,7 +2,7 @@ version: 0.2
 
 env:
   variables:
-    AWS_S3_NAME: "digital-aws"
+    AWS_S3_NAME: "digital-swagger"
 phases:
   build:
     commands:
