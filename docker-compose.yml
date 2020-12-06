@@ -1,11 +1,20 @@
 version: '3.3'
 services:
   swagger-ui:
-    image: swaggerapi/swagger-ui:$(cat ./VERSION)
-    container_name: digital-swagger
+    image: swaggerapi/swagger-ui:v3.24.3
+    container_name: digital-swagger-ui
     ports:
-      - "80:8080"
+      - "8081:8080"
     volumes:
       - ./swagger:/usr/share/nginx/html/swagger
     environment:
-      API_URL: swagger/api.yaml
+      API_URL: swagger/api.yml
+  swagger-editor:
+    image: swaggerapi/swagger-editor
+    container_name: digital-swagger-editor
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./swagger:/tmp
+    environment:
+     SWAGGER_FILE: /tmp/api.yml
