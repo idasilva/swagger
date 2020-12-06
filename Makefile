@@ -9,7 +9,7 @@ AWS_S3_REGION:="sa-east-1"
 help:
 	@echo 'Usage: make <OPTIONS> ... <TARGETS>'
 	@echo '    build                build project for current platform.'
-	@echo '    deploy               deploy swagger on s3 .'
+	@echo '    deploy               deploy swagger-ui on s3 .'
 	@echo '    all                  execute all commands.'
 
 build:
