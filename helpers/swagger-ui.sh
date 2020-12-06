@@ -32,8 +32,8 @@ fi
 
 cd $ROOT_DIR/helpers/dist/swagger-ui-3.24.3/dist/
 
-echo "version: $SEARCH"
-echo "version: $REPLACE"
+echo "from: $SEARCH"
+echo "to: $REPLACE"
 
 
 if [[ $SEARCH != "" && $REPLACE != "" ]]; then
