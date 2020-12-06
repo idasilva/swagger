@@ -17,7 +17,7 @@ build:
 
 deploy:
 	@aws s3 sync $(ROOT_DIR)/helpers/dist/swagger-ui-$(VERSION)/dist/ s3://$(AWS_S3_NAME) \
-            --acl public-read
+            --acl public-read --region $(AWS_S3_REGION)
 clean:
 	@rm -Rf $(ROOT_DIR)/helpers/dist/
 
