@@ -8,7 +8,7 @@ services:
     volumes:
       - ./swagger:/usr/share/nginx/html/swagger
     environment:
-      API_URL: swagger/api.yml
+      API_URL: swagger/exemplo.yml
   swagger-editor:
     image: swaggerapi/swagger-editor
     container_name: digital-swagger-editor
@@ -17,4 +17,4 @@ services:
     volumes:
       - ./swagger:/tmp
     environment:
-     SWAGGER_FILE: /tmp/api.yml
+     SWAGGER_FILE: /tmp/exemplo.yml

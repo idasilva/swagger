@@ -13,7 +13,7 @@ help:
 	@echo '    all                  execute all commands.'
 
 build:
-	@helpers/swagger-ui.sh
+	@helpers/swagger.sh
 
 deploy:
 	@aws s3 sync $(ROOT_DIR)/helpers/dist/swagger-ui-$(VERSION)/dist/ s3://$(AWS_S3_NAME) \
