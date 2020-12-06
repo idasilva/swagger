@@ -8,6 +8,6 @@ phases:
   build:
     commands:
       - echo "Entered the build phase.."
-  post-build:
+  post_build:
     commands:
       - aws s3 sync ./swagger/ s3://AWS_S3_NAME --acl public-read --region $(AWS_S3_REGION)
